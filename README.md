@@ -1,2 +1,2 @@
 # Python-Examples
-To store some python examples
+To store some python examples.
