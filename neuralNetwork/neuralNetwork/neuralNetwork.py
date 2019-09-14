@@ -1,4 +1,26 @@
+import sys
 import numpy as np
+
+def progress_bar(rate):
+    """ 进度条效果
+
+    :param rate: 进度百分比
+    """
+    label = ["-", "\\", "|", "/"]
+    # 获取标准输出
+    _output = sys.stdout
+    bar = ""
+    for i in range(rate // 2):
+        bar = bar + "="
+    for i in range(50 - rate // 2):
+        bar = bar + " "
+    # 输出进度条
+    _output.write(f'\rProc:[{bar}][{rate:.0f}%][{label[rate%4]}]')
+    if rate == 100:
+        _output.write(f'\n')
+    # 将标准输出一次性刷新
+    _output.flush()
+   
 
 class Neural_network(object):
 
@@ -89,21 +111,21 @@ class Neural_network(object):
         :param X: 输入值
         :param t: 标签值
         """
-        j = 0
-        for i in range(num):
-            if i == j * num // 100:
-                print(j, "% finished.")
-                j += 1
+        print("Training begins:")
+        for i in range(num):  
             self.network_forward(X)
             self.network_backward(t)
+            progress_bar((i + 1) * 100 // num)
 
+        print()
         print("After training:")
-        print("probs:", self.probs[np.arange(X.shape[0]), t])
-        print("loss:", self.loss)
+        print("Probability:", self.probs[np.arange(X.shape[0]), t])
+        print("Cross-entropy loss:", self.loss)
         print()
 
     def network_test(self, X):
         """ 神经网络-测试
         """
+        print("Test results:")
         self.network_forward(X)
         return np.argmax(self.probs, axis=1)

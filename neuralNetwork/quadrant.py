@@ -1,5 +1,5 @@
-import neuralNetwork.neuralNetwork as nn
 import numpy as np
+import neuralNetwork.neuralNetwork as nn
 
 # 类名
 class_names = ["1st", "2nd", "3rd", "4th"]  
