@@ -112,10 +112,13 @@ class Neural_network(object):
         :param t: 标签值
         """
         print("Training begins:")
+        j = 0
         for i in range(num):  
             self.network_forward(X)
             self.network_backward(t)
-            progress_bar((i + 1) * 100 // num)
+            if (i + 1) * 100 // num == j:
+                progress_bar((i + 1) * 100 // num)
+                j += 1
 
         print()
         print("After training:")
