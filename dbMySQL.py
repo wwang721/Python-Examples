@@ -51,9 +51,9 @@ print()
 
 for index, row in enumerate(results):
 	#print(results.index(row) + 1, end = " | ")	# 获取每行的序号
-	print(index+1, end=" | ") # 获取每行的序号
+	print(index + 1, end = " | ") # 获取每行的序号
 	for val in row:
-		print(val, end=" | ")	# 输出所有值
+		print(val, end = " | ")	# 输出所有值
 	print()
 print()
 
