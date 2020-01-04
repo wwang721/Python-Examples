@@ -49,8 +49,9 @@ for row in mycursor.description:	# 通过 cursor.description 获得所有字段�
 	print(row[0], end = " | ")	# cursor.description 每行第一个元素即为字段名
 print()
 
-for row in results:
-	print(results.index(row) + 1, end = " | ")	# 获取每行的序号
+for index, row in enumerate(results):
+	#print(results.index(row) + 1, end = " | ")	# 获取每行的序号
+	print(index+1, end=" | ") # 获取每行的序号
 	for val in row:
 		print(val, end=" | ")	# 输出所有值
 	print()
