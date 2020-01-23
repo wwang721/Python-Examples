@@ -21,14 +21,14 @@ def main():
 	#print(y)
 
 	#=============================================================
-	''' load .csv (Comma Separated Values) file as np.array '''
+	''' load .csv (comma separated values) file as np.array '''
 	np.savetxt("lambda.csv", data, fmt="%g", delimiter=',')
 
 	data1 = np.loadtxt(r"lambda.csv", delimiter=',')
 	#print(data1)
 
 	#=============================================================
-	''' load .tsv (Tab Separated Values) file as np.array '''
+	''' load .tsv (tab separated values) file as np.array '''
 	np.savetxt("lambda.tsv", data, fmt="%g", delimiter='\t')
 
 	data2 = np.loadtxt(r"lambda.tsv", delimiter='\t')

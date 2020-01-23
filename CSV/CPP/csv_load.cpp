@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		/*
 		ofstream fout(fileName);
 
-		fout_gx<<S[i]<<",";	
+		fout<<S[i]<<",";	
 		
 		fout.close();
 		*/
