@@ -35,7 +35,7 @@
  
 整个 **HDF5** 文件的结构如下所示：
  
-```
+``` python
 +-- /
 |   +-- group_1
 |   |   +-- dataset_1_1
@@ -94,8 +94,8 @@
 
 **C++** 读写 **HDF5** 文件比较复杂，参考官网给出的 Examples，下面给出一个创建 **HDF5** 文件的例子和一个读写 **HDF5** 文件的例子:
 
-1. [`/CPP/h5cpp_creating.cpp`](/CPP/h5cpp_creating.cpp)
-2. [`/CPP/h5cpp_reading.cpp`](/CPP/h5cpp_reading.cpp)
+1. [`/CPP/h5cpp_creating.cpp`](/HDF5/CPP/h5cpp_creating.cpp)
+2. [`/CPP/h5cpp_reading.cpp`](/HDF5/CPP/h5cpp_reading.cpp)
 
 
 ## **总结**
