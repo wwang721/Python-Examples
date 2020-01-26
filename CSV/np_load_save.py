@@ -9,7 +9,7 @@ import numpy as np
 
 def main():
 	#=============================================================
-	''' load plain text file (.txt) as np.array '''
+	''' Load plain text file (.txt) as np.array. '''
 	data = np.loadtxt(r"lambda.txt")
 
 	#print(data)
@@ -21,14 +21,14 @@ def main():
 	#print(y)
 
 	#=============================================================
-	''' load .csv (comma separated values) file as np.array '''
+	''' Load .csv (comma separated values) file as np.array. '''
 	np.savetxt("lambda.csv", data, fmt="%g", delimiter=',')
 
 	data1 = np.loadtxt(r"lambda.csv", delimiter=',')
 	#print(data1)
 
 	#=============================================================
-	''' load .tsv (tab separated values) file as np.array '''
+	''' Load .tsv (tab separated values) file as np.array. '''
 	np.savetxt("lambda.tsv", data, fmt="%g", delimiter='\t')
 
 	data2 = np.loadtxt(r"lambda.tsv", delimiter='\t')

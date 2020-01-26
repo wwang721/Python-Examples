@@ -15,7 +15,7 @@
 
 using namespace std;
 
-int main(int argc, char **argv)
+int main(int argc, char ** argv)
 {
 
 	string fileName("lambda.csv");
@@ -26,11 +26,11 @@ int main(int argc, char **argv)
 	ifstream fin(fileName);
 	if(!fin)
 	{	
-		cout<<"Error: <"<<fileName<<"> is not existed!\n";
+		cout<<"Error: <"<<fileName<<"> is not existing!\n";
 		/*
 		ofstream fout(fileName);
 
-		fout<<S[i]<<",";	
+		fout << S[i] << ",";	
 		
 		fout.close();
 		*/
@@ -63,7 +63,7 @@ int main(int argc, char **argv)
 
 	cout<<"Data dimension: "<<dimension[0]<<"x"<<dimension[1]<<endl;
 
-	//data in 2-D vector S(m*n)
+	//Data in 2-D vector S(m*n)
 	vector< vector<double> > S(dimension[0], vector<double>(dimension[1]));
 
 	for(int i = 0; i < dimension[0]; i++)
