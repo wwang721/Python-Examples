@@ -12,7 +12,7 @@
 
 每个 dataset 可以分成两部分: **原始数据 (raw) data values** 和 **元数据 metadata** (a set of data that describes and gives information about other data => raw data)。
 
-```
+``` cpp
 +-- Dataset
 |   +-- (Raw) Data Values (eg: a 4 x 5 x 6 matrix)
 |   +-- Metadata
@@ -87,7 +87,7 @@
 
 **HDF5** 的 **python** 库 [**h5py**]( http://www.h5py.org) 调用起来比较简单，我在这给出一个简单的例子：
 
-[`/h5py_example.py`](/h5py_example.py)
+[`/h5py_example.py`](/HDF5/h5py_example.py)
 
 
 ## **C++ 读写 HDF5 文件**
