@@ -3,7 +3,7 @@
  * Created by WW on 2020/01/26.                                                *
  * All rights reserved.                                                        *
  *                                                                             *
- * This example illustrates how to read and edit an existing dataset.              *
+ * This example illustrates how to read and edit an existing dataset.          *
  * Reference: HDF5 Tutorial (https://portal.hdfgroup.org/display/HDF5/HDF5)    *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
