@@ -1,8 +1,8 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Copyright © 2020 Wei Wang.						                           *
+ * Copyright © 2020 Wei Wang.						       *
  * Created by WW on 2020/01/26.	                                               *
- * All rights reserved.							                               *
- *	                                                                           *
+ * All rights reserved.							       *
+ *	                                                                       *
  * This example illustrates how to create a dataset that is a 4 x 6 array.     *
  * Reference: HDF5 Tutorial (https://portal.hdfgroup.org/display/HDF5/HDF5)    *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
