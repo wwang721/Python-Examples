@@ -12,7 +12,7 @@
 
 每个 dataset 可以分成两部分: **原始数据 (raw) data values** 和 **元数据 metadata** (a set of data that describes and gives information about other data => raw data)。
 
-``` python
+```
 +-- Dataset
 |   +-- (Raw) Data Values (eg: a 4 x 5 x 6 matrix)
 |   +-- Metadata
@@ -35,7 +35,7 @@
  
 整个 **HDF5** 文件的结构如下所示：
  
-``` python
+```
 +-- /
 |   +-- group_1
 |   |   +-- dataset_1_1
@@ -103,14 +103,6 @@
 更多高级 **API** (Application Program Interface) 的调用，如 **Subset**, **Hyperslab**, **Chunk** , **Compress**, **Single-Writer/Multiple-Reader** (SWMR), **Parallel HDF5** (即 **HDF5 MPI - Message Passing Interface** 并行读写) 以及 **Virtual Dataset** (VDS) 等，可以查阅官网的 [**Documentation**](https://portal.hdfgroup.org/display/HDF5/HDF5)。
 
 除了储存数码数据，**HDF5** 文件还可以用于存储图像、PDF文件，甚至 Excel 文件，但是鉴于我目前的科研需求，还是 .tsv 和 .txt 更适合我，毕竟查看起来更简单，跨平台跨语言读写也很方便。对我来说，.csv 文件都已经算是比较高级的数据储存格式了😆。 🎉 🎉 🎉 
-
-#### Sponsor the author if you like the contents!
-
-<center class="half">
-    <img src="https://nono721-1300921342.cos.ap-shanghai.myqcloud.com/WechatPay.png" width="251" style="margin-right:10px;margin-left:10px"/><img src="https://nono721-1300921342.cos.ap-shanghai.myqcloud.com/AliPay.png" width="250" style="margin-right:10px;margin-left:10px"/>
-</center>
-
-&ensp;
 
 
 
