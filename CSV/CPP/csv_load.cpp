@@ -26,7 +26,7 @@ int main(int argc, char ** argv)
 	ifstream fin(fileName);
 	if(!fin)
 	{	
-		cout<<"Error: <"<<fileName<<"> is not existing!\n";
+		cout << "Error: <" << fileName << "> is not existing!\n";
 		/*
 		ofstream fout(fileName);
 
@@ -37,7 +37,7 @@ int main(int argc, char ** argv)
 	}
 	else
 	{
-		cout<<"Loading <"<<fileName<<"> ...\n";
+		cout << "Loading <" << fileName << "> ...\n";
 		
 		string line;	// every line data in String
 		
@@ -61,7 +61,7 @@ int main(int argc, char ** argv)
 	dimension[0] = dataString.size();
 	dimension[1] = dataString[0].size();
 
-	cout<<"Data dimension: "<<dimension[0]<<"x"<<dimension[1]<<endl;
+	cout << "Data dimension: " << dimension[0] << "x" << dimension[1] << endl;
 
 	//Data in 2-D vector S(m*n)
 	vector< vector<double> > S(dimension[0], vector<double>(dimension[1]));
@@ -73,9 +73,9 @@ int main(int argc, char ** argv)
 			// c_str() covert "string" to "char *"
 			// sscanf() convert "char *" to "%lf" ("double")			
 			sscanf(dataString[i][j].c_str(), "%lf", &S[i][j]);	
-			cout<<S[i][j]<<"\t";
+			cout << S[i][j] << "\t";
 		}
-		cout<<endl;
+		cout << endl;
 	}
 
 	return 0;
