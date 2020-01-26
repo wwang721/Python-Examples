@@ -87,15 +87,15 @@
 
 **HDF5** 的 **python** 库 [**h5py**]( http://www.h5py.org) 调用起来比较简单，我在这给出一个简单的例子：
 
-[`/h5py_example.py`](/HDF5/h5py_example.py)
+[`/HDF5/h5py_example.py`](/HDF5/h5py_example.py)
 
 
 ## **C++ 读写 HDF5 文件**
 
 **C++** 读写 **HDF5** 文件比较复杂，参考官网给出的 Examples，下面给出一个创建 **HDF5** 文件的例子和一个读写 **HDF5** 文件的例子:
 
-1. [`/CPP/h5cpp_creating.cpp`](/HDF5/CPP/h5cpp_creating.cpp)
-2. [`/CPP/h5cpp_reading.cpp`](/HDF5/CPP/h5cpp_reading.cpp)
+1. [`/HDF5/CPP/h5cpp_creating.cpp`](/HDF5/CPP/h5cpp_creating.cpp)
+2. [`/HDF5/CPP/h5cpp_reading.cpp`](/HDF5/CPP/h5cpp_reading.cpp)
 
 
 ## **总结**
