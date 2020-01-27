@@ -74,9 +74,9 @@
 
 下载安装完成后可以在终端使用 `h5dump` 命令查看 **HDF5** 文件的内容。官网同时提供一个 **JAVA** 开发的 **HDF5** 数据可视化工具 [**HDFView**](https://portal.hdfgroup.org/display/support/Download+HDFView)，支持全平台查看数据, 但是注意打开文件的路径中不要包含中文。
 
-* <font color="#26975b"><b>注意:</b></font>当为 **python** 安装 **HDF5** 的 [**h5py**]( http://www.h5py.org) 库时，使用 `conda install h5py` 或者 `pip install h5py` 后也会安装部分二进制文件 (如 `h5dump`, `h5cc/h5c++`,  `h5fc` 等) 和库文件，但是可能不完整，导致 **HDF5** 的 C/C++ 编译器 `h5cc/h5c++` 和 Fortran 编译器 `h5fc` 无法正常工作。
+* **注意:** 当为 **python** 安装 **HDF5** 的 [**h5py**]( http://www.h5py.org) 库时，使用 `conda install h5py` 或者 `pip install h5py` 后也会安装部分二进制文件 (如 `h5dump`, `h5cc/h5c++`,  `h5fc` 等) 和库文件，但是可能不完整，导致 **HDF5** 的 C/C++ 编译器 `h5cc/h5c++` 和 Fortran 编译器 `h5fc` 无法正常工作。
 
-* <font color="#26975b"><b>解决办法:</b></font>若 `h5c++` 无法正常编译 C++ 文件，终端输入 `which h5c++`, 若显示该二进制文件在 **python** 的二进制 (binary) 文件夹 **bin** 内，则只需找到 `brew` 或者其他**安装包管理工具**下载的 `h5c++` (一般在 `/usr/local/bin` 内) 或者官网下载解压后的 `h5c++`，在根目录 (~) 下的 .bashrc 文件 (或者其他 shell, 如 zsh 的配置文件 .zshrc) 内添加 `alias h5c++ = /usr/local/bin/h5c++` 就可以了。
+* **解决办法:** 若 `h5c++` 无法正常编译 C++ 文件，终端输入 `which h5c++`, 若显示该二进制文件在 **python** 的二进制 (binary) 文件夹 **bin** 内，则只需找到 `brew` 或者其他**安装包管理工具**下载的 `h5c++` (一般在 `/usr/local/bin` 内) 或者官网下载解压后的 `h5c++`，在根目录 (~) 下的 .bashrc 文件 (或者其他 shell, 如 zsh 的配置文件 .zshrc) 内添加 `alias h5c++ = /usr/local/bin/h5c++` 就可以了。
 <br><br>
 若是想用 `clang++` 或者 `g++` 而非 `h5c++` 编译, 其中只要添加一些**头文件** (-I) 和**库文件** (-L) 的 **flags** 就行了。首先确认 `h5c++` 可以正常编译后，在终端输入 `h5c++ -show`, 会显示 
 `CXX_COMPILER` + `CXX_FLAGS`, 例如: `g++ -I/usr/local/opt/szip/include -L/usr/local/Cellar/hdf5/1.10.6/lib /usr/local/Cellar/hdf5/1.10.6/lib/libhdf5_hl_cpp.a /usr/local/Cellar/hdf5/1.10.6/lib/libhdf5_cpp.a /usr/local/Cellar/hdf5/1.10.6/lib/libhdf5_hl.a /usr/local/Cellar/hdf5/1.10.6/lib/libhdf5.a -L/usr/local/opt/szip/lib -lsz -lz -ldl -lm`
