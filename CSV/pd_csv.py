@@ -36,6 +36,17 @@ def main():
 	:param names: List, change column index (no matter header = 0 or None) to names
 	'''
 
+	X = data.columns	# get column index
+	Y = data.index 		# get line index
+	print(X)
+	print(Y)
+	'''
+	Notice: 
+		X.dtype = 'object', and Y.dtype = 'object' ('object' is similar to 'string')
+		if you need to convert string to numbers:
+		X = X.astype(np.float64), Y = Y.astype(np.float64)
+	'''
+
 	print(data, '\n')
 
 	# Convert the values (exclude line and column index) of pd.DataFrame -> np.array .
