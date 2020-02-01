@@ -22,8 +22,9 @@ def main():
 	print(df, '\n')
 
 	# Save pd.DataFrame as .csv file.
-	df.to_csv("pd_test.csv", index = True, sep = ',')
+	df.to_csv("pd_test.csv", header = True, index = True, sep = ',')
 	'''
+	:param header: Bool, default = True (column index saved in CSV file)
 	:param index: Bool, default = False (line index not saved in CSV file)
 	'''
 
