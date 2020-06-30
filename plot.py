@@ -5,6 +5,13 @@ print(plt.style.available)
 
 plt.style.use("ggplot")
 
+# For SCI Plots
+# pip install SciencePlots
+# https://github.com/garrettj403/SciencePlots
+plt.style.use('science')
+# or you can use two styles: plt.style.use(['science', 'ieee'])
+
+
 x = np.linspace(0, 10, 1000)
 y = np.sin(x)
 z = np.cos(x**2)
