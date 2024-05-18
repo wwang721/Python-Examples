@@ -12,7 +12,7 @@ def plt_init():
     plt.rcParams.update({
         # requires a working LaTeX installation & slower than Matplotlib's mathtext
         "text.usetex": True,
-        "font.family": "sans-serif",
+        "font.family": "sans-serif",    # or "Times New Roman"
         "font.sans-serif": "DejaVu Sans"
     })
 
