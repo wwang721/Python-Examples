@@ -14,3 +14,20 @@ However, the font for math text remains "DejaVu Sans," which does not match the 
 
 There are still issues with the "Computer Modern (TeX)" font when using expressions like `$\langle x\rangle$` to generate $\langle x\rangle$, the left bracket is missing, and the right bracket appears disproportionately large. To address this, I use `$\left< x\right>$` instead and ***manually*** adjust the font size in the SVG source file as needed.
 
+## How to install fonts for Matplotlib
+
+Sometimes, Matplotlib may return the error: `"findfont: Font family ['Times New Roman'] not found. Falling back to DejaVu Sans."`
+
+To manually install a font for Matplotlib, follow these steps:
+
+1. Run the following code to locate the Matplotlib configuration directory:
+``` python
+import matplotlib
+print(matplotlib.matplotlib_fname())
+```
+This will output a file path, such as: `/home/wwang/anaconda3/lib/python3.8/site-packages/matplotlib/mpl-data/matplotlibrc`.
+
+2. Navigate to the directory `mpl-data`. Inside it, you will find a `font/ttf` subdirectory.
+3. Copy the desired `.ttf` font file into the `font/ttf` directory.
+4. Clear the Matplotlib font cache by running: `rm -rf ~/.cache/matplotlib`.
+5. Rerun your Python code, and the new font should now work correctly.
