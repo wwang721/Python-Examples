@@ -12,8 +12,8 @@ def plt_init():
     plt.rcParams.update({
         # requires a working LaTeX installation & slower than Matplotlib's mathtext
         "text.usetex": False,
-        "font.family": "Times New Roman",    #"sans-serif"
-        # "font.sans-serif": "Times New Roman"# "DejaVu Sans"
+        "font.family": "Times New Roman",    # "sans-serif"
+        # "font.sans-serif": "DejaVu Sans"
     })
     
     plt.rcParams['svg.fonttype'] = 'none'    # save svg without text as paths but embedded fonts
