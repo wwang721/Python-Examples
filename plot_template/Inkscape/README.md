@@ -9,10 +9,12 @@ Here is a possible solution to address this issue:
 > Note: if you enable TeX for rendering math expression by setting `"text.usetex": True`, all text will be save as paths, overriding the `plt.rcParams['svg.fonttype']='none'` setting.
 
 
-However, the font for math text remains "DejaVu Sans," which does not match the other text. To resolve this, I change the math text font to something more consistent, such as "Computer Modern (TeX)." Unfortunately, the SVG file may not render correctly if the required fonts are not installed locally. To fix this issue, I download and install the missing fonts, such as "cmr10.ttf," which can be found [here](https://github.com/ClassroomPresenter/CP3/blob/master/Fonts/cmr10.ttf). You can also open the SVG file in a text editor to identify which fonts are missing.
-
+However, the font for math text remains "DejaVu Sans," which does not match the other text. To resolve this, I change the math text font to something more consistent, such as "Computer Modern (TeX)." Unfortunately, the SVG file may not render correctly if the required fonts are not installed locally. To fix this issue, I downloaded and installed the missing fonts, such as "cmr10.ttf," which can be found [here](https://github.com/ClassroomPresenter/CP3/blob/master/Fonts/cmr10.ttf). You can also open the SVG file in a text editor to identify which fonts are missing.
+Alternatively, there is an even simpler method: you can directly open the Matplotlib font folder (see how to locate the font folder [here](#how-to-install-fonts-for-matplotlib)) and install the desired fonts there.
 
 There are still issues with the "Computer Modern (TeX)" font when using expressions like `$\langle x\rangle$` to generate $\langle x\rangle$, the left bracket is missing, and the right bracket appears disproportionately large. To address this, I use `$\left< x\right>$` instead and ***manually*** adjust the font size in the SVG source file as needed.
+
+> Update: After opening the "cmex10.ttf" font in [Glyphr Studio](https://www.glyphrstudio.com/online), I discovered that `$\langle$` is missing because it corresponds to a "soft hyphen" in this font, which is actually invisible. Similarly, `$\rangle$` corresponds to the registered sign ® in the font. To address this issue, I used Glyphr Studio to create a customized font, "[Mycmex10.otf](/plot_template/Inkscape/Mycmex10-Regular.otf)", mapping the Kanbun character ㆑ to `$\langle$`. After installing this customized font, I edited the SVG source file (replacing "cmex10" with "Mycmex10" and adding ㆑ in front of ®), and now everything works as expected!
 
 ## How to install fonts for Matplotlib
 
