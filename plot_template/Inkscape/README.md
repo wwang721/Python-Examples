@@ -33,3 +33,8 @@ This will output a file path, such as: `/home/wwang/anaconda3/lib/python3.8/site
 3. Copy the desired `.ttf` font file into the `font/ttf` directory.
 4. Clear the Matplotlib font cache by running: `rm -rf ~/.cache/matplotlib`.
 5. Rerun your Python code, and the new font should now work correctly.
+
+## How to save a figure in EPS format
+
+According to the [Matplotlib documentation](https://matplotlib.org/stable/users/explain/text/usetex.html#postscript-options), to generate scalable EPS files, you need to set `plt.rcParams["ps.usedistiller"] = "xpdf"`.
+This configuration requires [**Ghostscript**](https://ghostscript.com/releases/gsdnld.html) to be installed locally.
