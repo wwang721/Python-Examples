@@ -30,4 +30,3 @@ def plt_init():
     plt.rc('axes', labelsize=14, titlesize=14)
     plt.rc('legend', fontsize=12)
     
-
