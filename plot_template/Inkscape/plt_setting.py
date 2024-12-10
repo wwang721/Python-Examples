@@ -16,10 +16,13 @@ def plt_init():
         "font.family": "Times New Roman",    # "sans-serif"
         # "font.sans-serif": "DejaVu Sans"
     })
-    
+
+    plt.rcParams["ps.usedistiller"] = "xpdf"    # for scalable eps file
     plt.rcParams['svg.fonttype'] = 'none'    # save svg without text as paths but embedded fonts
-    plt.rcParams["mathtext.fontset"] = "cm"    # change the math font to Computer Modern (TeX font)
+    
     plt.rcParams['figure.constrained_layout.use'] = True
+    plt.rcParams["mathtext.fontset"] = "cm"    # change the math font to Computer Modern (TeX font)
+    
     plt.rcParams['ytick.right'] = True
     plt.rcParams['xtick.top'] = True
     plt.rc('xtick', labelsize=12, direction='in')
