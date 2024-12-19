@@ -10,7 +10,9 @@ Here is a possible solution to address this issue:
 
 
 However, the font for math text remains "DejaVu Sans," which does not match the other text. To resolve this, I change the math text font to something more consistent, such as "Computer Modern (TeX)." Unfortunately, the SVG file may not render correctly if the required fonts are not installed locally. To fix this issue, I downloaded and installed the missing fonts, such as "cmr10.ttf," which can be found [here](https://github.com/ClassroomPresenter/CP3/blob/master/Fonts/cmr10.ttf). You can also open the SVG file in a text editor to identify which fonts are missing.
-Alternatively, there is an even simpler method: you can directly open the Matplotlib font folder (see how to locate the font folder [here](#how-to-install-fonts-for-matplotlib)) and install the desired fonts there.
+Alternatively, there is an even ***simpler method***: you can directly open the Matplotlib font folder (see how to locate the font folder [here](#how-to-install-fonts-for-matplotlib)) and install the desired fonts there.
+> Caveat: Avoid installing the STIX fonts in Matplotlib's font folder, as this can cause conflicts with websites that use MathJax for rendering mathematical expressions, such as [Stack Exchange Mathematics](https://math.stackexchange.com/questions/2341006/why-is-the-saddlepoint-approximation-called-a-saddlepoint-approximation).
+
 
 There are still issues with the "Computer Modern (TeX)" font when using expressions like `$\langle x\rangle$` to generate $\langle x\rangle$, the left bracket is missing, and the right bracket appears disproportionately large. To address this, I use `$\left< x\right>$` instead and ***manually*** adjust the font size in the SVG source file as needed.
 
