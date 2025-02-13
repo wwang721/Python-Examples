@@ -6,4 +6,4 @@ To get started, you’ll need to install the official OpenAI SDK (Software Devel
 ```
 pip install openai
 ```
-To use Conversational AI tools like [ChatGPT](/OpenAI.py) or [DeepSeek](/DeepSeek.py) via their APIs, you need to sign in to their API platform, generate an API key, and ensure your account has sufficient balance.
+To use Conversational AI tools like [ChatGPT](/LLMs_API/OpenAI.py) or [DeepSeek](/LLMs_API/DeepSeek.py) via their APIs, you need to sign in to their API platform, generate an API key, and ensure your account has sufficient balance.
