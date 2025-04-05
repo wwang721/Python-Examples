@@ -40,3 +40,5 @@ This will output a file path, such as: `/home/wwang/anaconda3/lib/python3.8/site
 
 According to the [Matplotlib documentation](https://matplotlib.org/stable/users/explain/text/usetex.html#postscript-options), to generate scalable EPS files, you need to set `plt.rcParams["ps.usedistiller"] = "xpdf"`.
 This configuration requires [**Ghostscript**](https://ghostscript.com/releases/gsdnld.html) to be installed locally.
+
+You can save a figure as `.eps` instead of `.svg` in **Inkscape**. However, this function is not in `Export...` but in `Save As...`.
