@@ -24,7 +24,7 @@ def plt_init():
     plt.rcParams["ps.usedistiller"] = "xpdf"    # for scalable eps file
     
     plt.rcParams['figure.constrained_layout.use'] = False  # depends on whether you want to adjust the distance between subplots by yourself
-    # You can always add bbox_inches='tight' when save figures instead
+    # You can always add bbox_inches='tight' when save figures
     
     plt.rcParams['ytick.right'] = True
     plt.rcParams['xtick.top'] = True
