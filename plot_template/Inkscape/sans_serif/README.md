@@ -1,6 +1,6 @@
 # Using sans-serif fonts in Matplotlib
 
-Use the default **DejaVu Sans** or download other sans-serif fonts like **Arial** and **Helvetica**, etc (need to install for Matplotlib, see [how](../README.md#how-to-install-fonts-for-matplotlib)).
+Use the default **DejaVu Sans** or download other sans-serif fonts like **Arial** and [**Helvetica**](https://font.download/font/helvetica-255), etc (need to install for Matplotlib, see [how](../README.md#how-to-install-fonts-for-matplotlib)).
 
 For `mathtext`, you can set it to `'dejavusans'` (default) and `'stixsans'`, see [Matplotlib documentation](https://matplotlib.org/stable/users/explain/text/mathtext.html#fonts).
 
