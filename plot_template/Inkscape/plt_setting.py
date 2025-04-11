@@ -18,7 +18,7 @@ def plt_init():
     })
 
     plt.rcParams["ps.usedistiller"] = "xpdf"    # for scalable eps file
-    plt.rcParams['svg.fonttype'] = 'none'    # save svg without text as paths but embedded fonts
+    plt.rcParams['svg.fonttype'] = 'none'    # save svg with embedded fonts instead of converting text to paths
     
     plt.rcParams['figure.constrained_layout.use'] = True  # depends on whether you want to adjust the distance between subplots by yourself
     plt.rcParams["mathtext.fontset"] = "cm"    # change the math font to Computer Modern (TeX font)
