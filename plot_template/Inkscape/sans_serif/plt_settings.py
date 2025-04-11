@@ -20,7 +20,7 @@ def plt_init():
     plt.rcParams["mathtext.rm"] = "Helvetica"  # change the math font to Helvetica
     plt.rcParams["mathtext.cal"] = "DejaVu Serif Display"  # use the dejavusans version \mathcal{}
 
-    plt.rcParams['svg.fonttype'] = 'none'    # save svg without text as paths but embedded fonts
+    plt.rcParams['svg.fonttype'] = 'none'    # save svg with embedded fonts instead of converting text to paths
     plt.rcParams["ps.usedistiller"] = "xpdf"    # for scalable eps file
     
     plt.rcParams['figure.constrained_layout.use'] = False  # depends on whether you want to adjust the distance between subplots by yourself
