@@ -13,6 +13,7 @@ However, the font for math text remains "DejaVu Sans," which does not match the 
 Alternatively, there is an even ***simpler method***: you can directly open the Matplotlib font folder (see how to locate the font folder [here](#how-to-install-fonts-for-matplotlib)) and install the desired fonts there.
 > Caveat: Avoid installing the STIX fonts in Matplotlib's font folder, as this can cause conflicts with websites that use MathJax for rendering mathematical expressions, such as [Stack Exchange Mathematics](https://math.stackexchange.com/questions/2341006/why-is-the-saddlepoint-approximation-called-a-saddlepoint-approximation).
 
+> Solution: Avoid installing fonts system-wide, as this may cause display issues in web browsers. Instead, to use fonts exclusively in **Inkscape**, copy the `.ttf`/`.otf` files to `C:\Program Files\Inkscape\share\inkscape\fonts`.
 
 There are still issues with the "Computer Modern (TeX)" font when using expressions like `$\langle x\rangle$` to generate $\langle x\rangle$, the left bracket is missing, and the right bracket appears disproportionately large. To address this, I use `$\left< x\right>$` instead and ***manually*** adjust the font size in the SVG source file as needed.
 
