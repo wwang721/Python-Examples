@@ -18,7 +18,7 @@ def plt_init():
     })
     plt.rcParams["mathtext.fontset"] = "custom"    
     plt.rcParams["mathtext.rm"] = "Helvetica"  # change the math font to Helvetica
-    plt.rcParams["mathtext.cal"] = "DejaVu Serif Display"  # use the dejavusans version \mathcal{}
+    plt.rcParams["mathtext.cal"] = "DejaVu Serif Display"  # use the dejavusans version \mathcal{}; set to "DejaVu Sans" for DejaVu normal math font
 
     plt.rcParams['svg.fonttype'] = 'none'    # save svg with embedded fonts instead of converting text to paths
     plt.rcParams["ps.usedistiller"] = "xpdf"    # for scalable eps file
